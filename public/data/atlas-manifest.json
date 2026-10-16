@@ -1,0 +1,49 @@
+{
+  "description": "Original FreeSurfer-derived inputs, unmodified. Generated JSON is a modified format conversion with rounded coordinates and Chinese display labels.",
+  "sources": [
+    {
+      "filename": "pial_left.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/pial_left.gii.gz",
+      "sha256": "1e76fe43ac194c15fd272643f7ae7995621e2a496b3102b2d6175f0f8e6d7fc8"
+    },
+    {
+      "filename": "pial_right.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/pial_right.gii.gz",
+      "sha256": "fdfae008bc10acf7cba82737ea5db9a7298948c41884a2d3330a785783a60a91"
+    },
+    {
+      "filename": "infl_left.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/infl_left.gii.gz",
+      "sha256": "1a571c9d598a476a202c7295c235a709de63360047b92c0e7b75ed18b0f37e74"
+    },
+    {
+      "filename": "infl_right.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/infl_right.gii.gz",
+      "sha256": "9f66b009e1da72158d75b4e739c6289aba0c1b08d818b2f0f9f61204aa4ba895"
+    },
+    {
+      "filename": "sulc_left.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/sulc_left.gii.gz",
+      "sha256": "bd0f87e0cba153e9d5c5281edc7267f631b1967e5883d4027924766c8430eb62"
+    },
+    {
+      "filename": "sulc_right.gii.gz",
+      "url": "https://raw.githubusercontent.com/nilearn/nilearn/0.12.1/nilearn/datasets/data/fsaverage5/sulc_right.gii.gz",
+      "sha256": "97afe76225903205a16b88f88cd796945f2a27011328e98decaa9128ff063afb"
+    },
+    {
+      "filename": "lh.aparc.a2009s.annot",
+      "url": "https://www.nitrc.org/frs/download.php/9343/lh.aparc.a2009s.annot",
+      "sha256": "c2401d6137949f33788283a4926cb61cb3b0bfe5bda1b368c22aa921ea06d38d"
+    },
+    {
+      "filename": "rh.aparc.a2009s.annot",
+      "url": "https://www.nitrc.org/frs/download.php/9342/rh.aparc.a2009s.annot",
+      "sha256": "99c028f9f9d8dce617e9f29a5ebdc2f1b187d83650b68128fae53c3669588da7"
+    }
+  ],
+  "outputs": {
+    "atlas.json": "744b81bef21fe4e1fcea9ff49d949dcbde07bc3cc52eddcfdf044167b156f120",
+    "regions.json": "aaba11284357e15282a35b44072c6ff0b844b0ff86f3f7a4a39ee85d4e6a6331"
+  }
+}

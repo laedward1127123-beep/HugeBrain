@@ -1,0 +1,1563 @@
+{
+  "functions": [
+    {
+      "id": "working-memory",
+      "name": "工作记忆",
+      "description": "在短暂延迟中保持、选择与操作信息。",
+      "color": "#7988ee"
+    },
+    {
+      "id": "visual-perception",
+      "name": "视觉感知",
+      "description": "从视觉输入中提取特征、类别与物体表征。",
+      "color": "#d2a76c"
+    },
+    {
+      "id": "attention",
+      "name": "注意",
+      "description": "选择相关信息并在空间或任务之间重新定向。",
+      "color": "#72b5ad"
+    },
+    {
+      "id": "cognitive-control",
+      "name": "认知控制",
+      "description": "维持目标、实施任务规则并监测冲突。",
+      "color": "#b895cc"
+    },
+    {
+      "id": "language",
+      "name": "语言",
+      "description": "词汇与句子层面的理解及组合加工。",
+      "color": "#d59caa"
+    },
+    {
+      "id": "episodic-memory",
+      "name": "情景记忆",
+      "description": "对事件及其情境的编码与提取；本示例库尚未收录。",
+      "color": "#8ba3ba"
+    }
+  ],
+  "papers": [
+    {
+      "id": "harrison-tong-2009",
+      "title": "Decoding reveals the contents of visual working memory in early visual areas",
+      "authors": [
+        "Stephenie A. Harrison",
+        "Frank Tong"
+      ],
+      "year": 2009,
+      "journal": "Nature",
+      "doi": "10.1038/nature07832",
+      "url": "https://www.nature.com/articles/nature07832",
+      "summary": "在没有物理刺激的记忆延迟期，早期视觉皮层的多体素活动模式仍携带被记忆的朝向信息。平均活动较低，并不等于该区域没有维持信息。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "工作记忆"
+        },
+        {
+          "category": "认知过程",
+          "label": "视觉特征保持"
+        },
+        {
+          "category": "实验范式",
+          "label": "朝向延迟辨别"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "事件相关；被试内条件对照"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "朝向解码准确率"
+        },
+        {
+          "category": "分析方法",
+          "label": "多体素模式解码（MVPA）"
+        },
+        {
+          "category": "刺激",
+          "label": "不同朝向的光栅"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "harrison-tong-2009-exp1",
+          "name": "记住一个朝向",
+          "paradigm": "朝向延迟辨别",
+          "task_description": "观看不同朝向的光栅，依据提示保留其中一个朝向，在延迟后比较探测光栅。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "观看",
+            "选择",
+            "延迟保持",
+            "探测比较"
+          ],
+          "stimulus": "定向光栅",
+          "animation": {
+            "type": "orientation-delay",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "编码光栅"
+              },
+              {
+                "label": "提示记忆目标"
+              },
+              {
+                "label": "延迟保持"
+              },
+              {
+                "label": "探测与判断"
+              }
+            ],
+            "title": "记住一个朝向"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "harrison-tong-2009-lh_45",
+          "experiment_id": "harrison-tong-2009-exp1",
+          "region_id": "lh_45",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "延迟期朝向解码",
+          "effect_direction": "decodable",
+          "summary": "V1–V4 的空间活动模式可区分正在记忆的朝向；这种信息可以出现在平均 BOLD 较低的延迟期。",
+          "mechanism": "与感觉招募解释一致；解码信息不等同于该区独立储存，也不构成因果证据。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究以视网膜定位定义早期视觉区。此处以双侧 S_calcarine 作解剖近似入口；未做坐标或 ROI 的 a2009s 配准，V1–V4 不等同于距状沟。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "delay-information",
+            "label": "可解码的记忆内容（示意）"
+          }
+        },
+        {
+          "id": "harrison-tong-2009-rh_45",
+          "experiment_id": "harrison-tong-2009-exp1",
+          "region_id": "rh_45",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "延迟期朝向解码",
+          "effect_direction": "decodable",
+          "summary": "V1–V4 的空间活动模式可区分正在记忆的朝向；这种信息可以出现在平均 BOLD 较低的延迟期。",
+          "mechanism": "与感觉招募解释一致；解码信息不等同于该区独立储存，也不构成因果证据。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究以视网膜定位定义早期视觉区。此处以双侧 S_calcarine 作解剖近似入口；未做坐标或 ROI 的 a2009s 配准，V1–V4 不等同于距状沟。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "delay-information",
+            "label": "可解码的记忆内容（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "serences-2009",
+      "title": "Stimulus-specific delay activity in human primary visual cortex",
+      "authors": [
+        "John T. Serences",
+        "Edward F. Ester",
+        "Edward K. Vogel",
+        "Edward Awh"
+      ],
+      "year": 2009,
+      "journal": "Psychological Science",
+      "doi": "10.1111/j.1467-9280.2009.02276.x",
+      "url": "https://pubmed.ncbi.nlm.nih.gov/19170936/",
+      "summary": "当任务要求只记住物体的颜色或朝向时，V1 延迟期模式主要反映被主动保持的那个特征。研究把平均反应幅度与模式中的信息区分开来。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "工作记忆"
+        },
+        {
+          "category": "认知过程",
+          "label": "任务相关特征选择与保持"
+        },
+        {
+          "category": "实验范式",
+          "label": "特征选择性延迟匹配"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "被试内；颜色与朝向条件"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "特征特异性模式信息"
+        },
+        {
+          "category": "分析方法",
+          "label": "MVPA；感觉与记忆模式比较"
+        },
+        {
+          "category": "刺激",
+          "label": "有颜色和朝向的光栅"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "serences-2009-exp1",
+          "name": "只保留相关特征",
+          "paradigm": "特征选择性延迟匹配",
+          "task_description": "观看同时具有颜色和朝向的刺激，只记住被指定的特征；经过空屏延迟后判断探测刺激。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "记住颜色",
+            "记住朝向",
+            "延迟后比较"
+          ],
+          "stimulus": "彩色定向光栅",
+          "animation": {
+            "type": "orientation-delay",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "指定相关特征"
+              },
+              {
+                "label": "观看刺激"
+              },
+              {
+                "label": "空屏保持"
+              },
+              {
+                "label": "特征匹配"
+              }
+            ],
+            "title": "只保留相关特征"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "serences-2009-lh_45",
+          "experiment_id": "serences-2009-exp1",
+          "region_id": "lh_45",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "任务相关特征解码",
+          "effect_direction": "selective",
+          "summary": "V1 的延迟期多体素模式反映被有意储存的特征；平均 BOLD 没有同样明显的持续升高。",
+          "mechanism": "支持选择性的感觉招募解释；不应把模式携带信息改写成所有视觉神经元持续增强。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "论文报告功能定义的 V1。双侧 S_calcarine 仅为邻近解剖入口，未按原始 ROI 与 a2009s 求重叠，也不代表已验证侧化。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "selective-information",
+            "label": "相关特征 / 无关特征（示意）"
+          }
+        },
+        {
+          "id": "serences-2009-rh_45",
+          "experiment_id": "serences-2009-exp1",
+          "region_id": "rh_45",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "任务相关特征解码",
+          "effect_direction": "selective",
+          "summary": "V1 的延迟期多体素模式反映被有意储存的特征；平均 BOLD 没有同样明显的持续升高。",
+          "mechanism": "支持选择性的感觉招募解释；不应把模式携带信息改写成所有视觉神经元持续增强。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "论文报告功能定义的 V1。双侧 S_calcarine 仅为邻近解剖入口，未按原始 ROI 与 a2009s 求重叠，也不代表已验证侧化。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "selective-information",
+            "label": "相关特征 / 无关特征（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "todd-marois-2004",
+      "title": "Capacity limit of visual short-term memory in human posterior parietal cortex",
+      "authors": [
+        "J. Jay Todd",
+        "René Marois"
+      ],
+      "year": 2004,
+      "journal": "Nature",
+      "doi": "10.1038/nature02466",
+      "url": "https://www.nature.com/articles/nature02466",
+      "summary": "改变视觉短时记忆负荷时，后顶叶活动与实际能够记住的信息量相联系，并呈容量受限的特征。它把行为容量与脑区反应联系起来。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "工作记忆"
+        },
+        {
+          "category": "认知过程",
+          "label": "视觉短时存储容量"
+        },
+        {
+          "category": "实验范式",
+          "label": "变化检测；记忆负荷操纵"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "被试内；多负荷条件"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "负荷相关 BOLD 反应"
+        },
+        {
+          "category": "分析方法",
+          "label": "区域平均反应与行为容量比较"
+        },
+        {
+          "category": "刺激",
+          "label": "视觉项目阵列"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "todd-marois-2004-exp1",
+          "name": "视觉短时记忆负荷",
+          "paradigm": "视觉变化检测",
+          "task_description": "短暂呈现不同数量的视觉项目，经过延迟后判断探测阵列是否发生变化；比较负荷条件。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "较少项目",
+            "较多项目",
+            "保持与探测"
+          ],
+          "stimulus": "视觉项目阵列",
+          "animation": {
+            "type": "generic",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "呈现项目阵列"
+              },
+              {
+                "label": "短暂保持"
+              },
+              {
+                "label": "比较探测阵列"
+              },
+              {
+                "label": "估计记忆容量"
+              }
+            ],
+            "title": "视觉短时记忆负荷"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "todd-marois-2004-lh_57",
+          "experiment_id": "todd-marois-2004-exp1",
+          "region_id": "lh_57",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "负荷相关 BOLD",
+          "effect_direction": "increase_then_plateau",
+          "summary": "后顶叶反应与可储存的信息量相关；增加项目数时，活动的容量限制与行为表现相联系。",
+          "mechanism": "提示后顶叶参与有限容量的视觉短时记忆网络；该关联不能单独定位唯一的储存机制。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文报告 posterior parietal cortex 及 IPS/IOS 相关反应。使用 S_intrapariet_and_P_trans 作为顶内沟的近似入口，未进行统计图到 a2009s 的重映射。",
+          "mapping_confidence": 0.5,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "plateau",
+            "label": "记忆负荷与反应（示意）"
+          }
+        },
+        {
+          "id": "todd-marois-2004-rh_57",
+          "experiment_id": "todd-marois-2004-exp1",
+          "region_id": "rh_57",
+          "function_ids": [
+            "working-memory"
+          ],
+          "metric": "负荷相关 BOLD",
+          "effect_direction": "increase_then_plateau",
+          "summary": "后顶叶反应与可储存的信息量相关；增加项目数时，活动的容量限制与行为表现相联系。",
+          "mechanism": "提示后顶叶参与有限容量的视觉短时记忆网络；该关联不能单独定位唯一的储存机制。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文报告 posterior parietal cortex 及 IPS/IOS 相关反应。使用 S_intrapariet_and_P_trans 作为顶内沟的近似入口，未进行统计图到 a2009s 的重映射。",
+          "mapping_confidence": 0.5,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "plateau",
+            "label": "记忆负荷与反应（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "desposito-1995",
+      "title": "The neural basis of the central executive system of working memory",
+      "authors": [
+        "Mark D'Esposito",
+        "John A. Detre",
+        "David C. Alsop",
+        "R. K. Shin",
+        "S. Atlas",
+        "Murray Grossman"
+      ],
+      "year": 1995,
+      "journal": "Nature",
+      "doi": "10.1038/378279a0",
+      "url": "https://www.nature.com/articles/378279a0",
+      "summary": "比较两项任务分别执行与同时执行时的脑活动，发现双任务条件下的前额叶参与，为工作记忆中央执行成分提供了早期神经影像证据。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "工作记忆与认知控制"
+        },
+        {
+          "category": "认知过程",
+          "label": "双任务协调"
+        },
+        {
+          "category": "实验范式",
+          "label": "双任务与单任务比较"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "被试内；任务组合条件"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "前额叶条件相关反应"
+        },
+        {
+          "category": "分析方法",
+          "label": "任务条件 BOLD 对比"
+        },
+        {
+          "category": "刺激",
+          "label": "两项并行认知任务"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文摘要与书目已核验；精细方法待提取"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "desposito-1995-exp1",
+          "name": "协调两项任务",
+          "paradigm": "双任务协调",
+          "task_description": "分别完成两项认知任务，再同时执行两项任务；比较单任务和双任务条件下的前额叶反应。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "任务 A",
+            "任务 B",
+            "任务 A 与 B 同时执行"
+          ],
+          "stimulus": "两项并行认知任务",
+          "animation": {
+            "type": "generic",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "单任务 A"
+              },
+              {
+                "label": "单任务 B"
+              },
+              {
+                "label": "同时执行"
+              },
+              {
+                "label": "比较区域反应"
+              }
+            ],
+            "title": "协调两项任务"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "desposito-1995-lh_15",
+          "experiment_id": "desposito-1995-exp1",
+          "region_id": "lh_15",
+          "function_ids": [
+            "working-memory",
+            "cognitive-control"
+          ],
+          "metric": "双任务相关 BOLD",
+          "effect_direction": "increase",
+          "summary": "原文报告前额叶在同时执行两项任务时出现激活，为中央执行过程的参与提供相关性证据。",
+          "mechanism": "可以解释为协调多个任务目标和信息流的需求；双任务差异本身无法排除一般难度等解释。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "摘要提供前额叶层级定位。额中回仅为低精度检索入口，双侧放置不声称原结果具有双侧对称性；尚未核验精确峰值、侧化或 a2009s 重叠。",
+          "mapping_confidence": 0.3,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "dual-task",
+            "label": "单任务 / 双任务（示意）"
+          }
+        },
+        {
+          "id": "desposito-1995-rh_15",
+          "experiment_id": "desposito-1995-exp1",
+          "region_id": "rh_15",
+          "function_ids": [
+            "working-memory",
+            "cognitive-control"
+          ],
+          "metric": "双任务相关 BOLD",
+          "effect_direction": "increase",
+          "summary": "原文报告前额叶在同时执行两项任务时出现激活，为中央执行过程的参与提供相关性证据。",
+          "mechanism": "可以解释为协调多个任务目标和信息流的需求；双任务差异本身无法排除一般难度等解释。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "摘要提供前额叶层级定位。额中回仅为低精度检索入口，双侧放置不声称原结果具有双侧对称性；尚未核验精确峰值、侧化或 a2009s 重叠。",
+          "mapping_confidence": 0.3,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "dual-task",
+            "label": "单任务 / 双任务（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "haxby-2001",
+      "title": "Distributed and overlapping representations of faces and objects in ventral temporal cortex",
+      "authors": [
+        "James V. Haxby",
+        "M. Ida Gobbini",
+        "Maura L. Furey",
+        "Alumit Ishai",
+        "Jennifer L. Schouten",
+        "Pietro Pietrini"
+      ],
+      "year": 2001,
+      "journal": "Science",
+      "doi": "10.1126/science.1063736",
+      "url": "https://doi.org/10.1126/science.1063736",
+      "summary": "不同物体类别在腹侧颞叶引起可区分的分布式活动模式。类别信息也存在于对该类别并非最大响应的区域，提示表征并非仅由一个最大激活点决定。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "视觉感知"
+        },
+        {
+          "category": "认知过程",
+          "label": "物体类别表征"
+        },
+        {
+          "category": "实验范式",
+          "label": "观看多类别图像"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "类别分块；跨数据划分比较"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "类别活动模式可区分性"
+        },
+        {
+          "category": "分析方法",
+          "label": "分布式模式相关与类别区分"
+        },
+        {
+          "category": "刺激",
+          "label": "面孔、猫、物体和无意义图像"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "haxby-2001-exp1",
+          "name": "读取分布式类别信息",
+          "paradigm": "类别图像观看",
+          "task_description": "观看不同类别图像，比较腹侧颞叶的多体素反应模式，并检查排除类别最大响应区域后是否仍可区分类别。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "面孔",
+            "猫",
+            "人造物体",
+            "无意义图像"
+          ],
+          "stimulus": "多类别图像",
+          "animation": {
+            "type": "category-viewing",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "观看类别图像"
+              },
+              {
+                "label": "提取活动模式"
+              },
+              {
+                "label": "跨数据比较"
+              },
+              {
+                "label": "检查分布式信息"
+              }
+            ],
+            "title": "读取分布式类别信息"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "haxby-2001-lh_21",
+          "experiment_id": "haxby-2001-exp1",
+          "region_id": "lh_21",
+          "function_ids": [
+            "visual-perception"
+          ],
+          "metric": "类别模式区分",
+          "effect_direction": "distributed_information",
+          "summary": "腹侧颞叶的分布式响应模式携带类别信息；移除某类别最大响应区域后仍保留可区分信息。",
+          "mechanism": "支持分布且重叠的表征观点，不否认局部区域的类别偏好。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "研究结论涉及广泛腹侧颞叶。G_oc-temp_lat-fusifor 只作解剖检索入口，既不是论文整个 ROI，也不等同于功能定义的 FFA。",
+          "mapping_confidence": 0.45,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "category-pattern",
+            "label": "分布式类别信息（示意）"
+          }
+        },
+        {
+          "id": "haxby-2001-rh_21",
+          "experiment_id": "haxby-2001-exp1",
+          "region_id": "rh_21",
+          "function_ids": [
+            "visual-perception"
+          ],
+          "metric": "类别模式区分",
+          "effect_direction": "distributed_information",
+          "summary": "腹侧颞叶的分布式响应模式携带类别信息；移除某类别最大响应区域后仍保留可区分信息。",
+          "mechanism": "支持分布且重叠的表征观点，不否认局部区域的类别偏好。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "研究结论涉及广泛腹侧颞叶。G_oc-temp_lat-fusifor 只作解剖检索入口，既不是论文整个 ROI，也不等同于功能定义的 FFA。",
+          "mapping_confidence": 0.45,
+          "animation": {
+            "type": "decoding",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "category-pattern",
+            "label": "分布式类别信息（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "corbetta-2000",
+      "title": "Voluntary orienting is dissociated from target detection in human posterior parietal cortex",
+      "authors": [
+        "Maurizio Corbetta",
+        "J. Michelle Kincade",
+        "John M. Ollinger",
+        "Mark P. McAvoy",
+        "Gordon L. Shulman"
+      ],
+      "year": 2000,
+      "journal": "Nature Neuroscience",
+      "doi": "10.1038/73009",
+      "url": "https://doi.org/10.1038/73009",
+      "summary": "事件相关设计把提示引发的空间注意定向与目标检测分开：顶内沟主要参与目标出现前的定向，而右颞顶交界与目标检测及未注意位置的目标有关。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "注意"
+        },
+        {
+          "category": "认知过程",
+          "label": "空间定向与再定向"
+        },
+        {
+          "category": "实验范式",
+          "label": "空间提示—目标检测"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "事件相关；提示与目标阶段分离"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "阶段相关区域反应"
+        },
+        {
+          "category": "分析方法",
+          "label": "提示和目标阶段 BOLD 对比"
+        },
+        {
+          "category": "刺激",
+          "label": "空间提示与视觉目标"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "corbetta-2000-exp1",
+          "name": "先定向，再发现目标",
+          "paradigm": "空间注意提示",
+          "task_description": "依据提示把注意转向某个位置，随后检测目标；比较目标出现前的注意定向与目标检测阶段。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "提示位置",
+            "未注意位置",
+            "定向阶段",
+            "检测阶段"
+          ],
+          "stimulus": "中央提示与侧方视觉目标",
+          "animation": {
+            "type": "attention-cue",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "注视中心"
+              },
+              {
+                "label": "空间提示"
+              },
+              {
+                "label": "等待目标"
+              },
+              {
+                "label": "目标检测"
+              }
+            ],
+            "title": "先定向，再发现目标"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "corbetta-2000-lh_57",
+          "experiment_id": "corbetta-2000-exp1",
+          "region_id": "lh_57",
+          "function_ids": [
+            "attention"
+          ],
+          "metric": "提示期 BOLD",
+          "effect_direction": "increase",
+          "summary": "在视觉目标出现前主动注意某个位置时，激活主要出现在顶内沟。",
+          "mechanism": "与主动空间定向过程相符；不能据此认为顶内沟只参与注意。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文的 intraparietal sulcus 近似映射至 S_intrapariet_and_P_trans；尚未用原始坐标或统计图核验左右分区覆盖。",
+          "mapping_confidence": 0.5,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "cue-period",
+            "label": "提示期注意定向（示意）"
+          }
+        },
+        {
+          "id": "corbetta-2000-rh_57",
+          "experiment_id": "corbetta-2000-exp1",
+          "region_id": "rh_57",
+          "function_ids": [
+            "attention"
+          ],
+          "metric": "提示期 BOLD",
+          "effect_direction": "increase",
+          "summary": "在视觉目标出现前主动注意某个位置时，激活主要出现在顶内沟。",
+          "mechanism": "与主动空间定向过程相符；不能据此认为顶内沟只参与注意。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文的 intraparietal sulcus 近似映射至 S_intrapariet_and_P_trans；尚未用原始坐标或统计图核验左右分区覆盖。",
+          "mapping_confidence": 0.5,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "cue-period",
+            "label": "提示期注意定向（示意）"
+          }
+        },
+        {
+          "id": "corbetta-2000-rh_26",
+          "experiment_id": "corbetta-2000-exp1",
+          "region_id": "rh_26",
+          "function_ids": [
+            "attention"
+          ],
+          "metric": "未注意目标相关 BOLD",
+          "effect_direction": "increase",
+          "summary": "右颞顶交界在目标被检测到时参与，特别是目标出现在未注意位置时。",
+          "mechanism": "与对行为相关目标的检测或重新定向相符；解释依赖当前任务对比。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "右颞顶交界跨越多个解剖分区；rh_26 缘上回只是粗略检索入口，未做 a2009s 配准。",
+          "mapping_confidence": 0.35,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "unexpected-target",
+            "label": "未注意位置的目标（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "macdonald-2000",
+      "title": "Dissociating the role of the dorsolateral prefrontal and anterior cingulate cortex in cognitive control",
+      "authors": [
+        "Angus W. MacDonald III",
+        "Jonathan D. Cohen",
+        "V. Andrew Stenger",
+        "Cameron S. Carter"
+      ],
+      "year": 2000,
+      "journal": "Science",
+      "doi": "10.1126/science.288.5472.1835",
+      "url": "https://doi.org/10.1126/science.288.5472.1835",
+      "summary": "在任务切换版 Stroop 中，左背外侧前额叶更关联控制准备，前扣带更关联不一致刺激的反应过程。研究区分了实施控制与监测表现的候选机制。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "认知控制"
+        },
+        {
+          "category": "认知过程",
+          "label": "任务准备与冲突监测"
+        },
+        {
+          "category": "实验范式",
+          "label": "任务切换版 Stroop"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "事件相关；准备和反应阶段分离"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "准备期与冲突期 BOLD"
+        },
+        {
+          "category": "分析方法",
+          "label": "阶段与条件 BOLD 对比"
+        },
+        {
+          "category": "刺激",
+          "label": "颜色词及其墨色"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "macdonald-2000-exp1",
+          "name": "准备规则，处理冲突",
+          "paradigm": "任务切换版 Stroop",
+          "task_description": "根据规则进行颜色命名或词语阅读，比较准备阶段以及一致、不一致刺激的反应阶段。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "颜色命名",
+            "词语阅读",
+            "一致刺激",
+            "不一致刺激"
+          ],
+          "stimulus": "颜色词和墨色",
+          "animation": {
+            "type": "generic",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "提示任务规则"
+              },
+              {
+                "label": "准备反应"
+              },
+              {
+                "label": "呈现颜色词"
+              },
+              {
+                "label": "命名或阅读"
+              }
+            ],
+            "title": "准备规则，处理冲突"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "macdonald-2000-lh_15",
+          "experiment_id": "macdonald-2000-exp1",
+          "region_id": "lh_15",
+          "function_ids": [
+            "cognitive-control"
+          ],
+          "metric": "任务准备期 BOLD",
+          "effect_direction": "increase",
+          "summary": "左背外侧前额叶在颜色命名的准备阶段比词语阅读更活跃，与实施控制的解释一致。",
+          "mechanism": "结果支持任务准备和规则实施的参与；不等于该区对所有控制过程都必需。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究报告左 DLPFC / BA9。lh_15 额中回为近似解剖入口，Brodmann 分区与 a2009s 不可直接一对一换算。",
+          "mapping_confidence": 0.45,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "preparation",
+            "label": "任务规则准备（示意）"
+          }
+        },
+        {
+          "id": "macdonald-2000-lh_6",
+          "experiment_id": "macdonald-2000-exp1",
+          "region_id": "lh_6",
+          "function_ids": [
+            "cognitive-control"
+          ],
+          "metric": "不一致反应 BOLD",
+          "effect_direction": "increase",
+          "summary": "前扣带在对不一致刺激作出反应时更活跃，与监测表现及控制需求的解释一致。",
+          "mechanism": "冲突相关 BOLD 结果支持功能分离，但不单独证明冲突监测的因果机制。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文报告 ACC / BA24、32。双侧 G_and_S_cingul-Ant 是内侧结构的解剖近似，不声称左、右半球有独立重复证据，也未精确验证分区边界。",
+          "mapping_confidence": 0.4,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "conflict",
+            "label": "一致 / 不一致（示意）"
+          }
+        },
+        {
+          "id": "macdonald-2000-rh_6",
+          "experiment_id": "macdonald-2000-exp1",
+          "region_id": "rh_6",
+          "function_ids": [
+            "cognitive-control"
+          ],
+          "metric": "不一致反应 BOLD",
+          "effect_direction": "increase",
+          "summary": "前扣带在对不一致刺激作出反应时更活跃，与监测表现及控制需求的解释一致。",
+          "mechanism": "冲突相关 BOLD 结果支持功能分离，但不单独证明冲突监测的因果机制。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文报告 ACC / BA24、32。双侧 G_and_S_cingul-Ant 是内侧结构的解剖近似，不声称左、右半球有独立重复证据，也未精确验证分区边界。",
+          "mapping_confidence": 0.4,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "conflict",
+            "label": "一致 / 不一致（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "fedorenko-2011",
+      "title": "Functional specificity for high-level linguistic processing in the human brain",
+      "authors": [
+        "Evelina Fedorenko",
+        "Michael K. Behr",
+        "Nancy Kanwisher"
+      ],
+      "year": 2011,
+      "journal": "PNAS",
+      "doi": "10.1073/pnas.1112937108",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC3182706/",
+      "summary": "先在每位参与者内定位对句子敏感的语言区域，再检验算术、工作记忆、认知控制和音乐等任务。结果支持这些功能定位区域对高层语言加工具有选择性。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "语言"
+        },
+        {
+          "category": "认知过程",
+          "label": "句子理解；词汇与组合加工"
+        },
+        {
+          "category": "实验范式",
+          "label": "句子与非词功能定位"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "个体功能定位；跨任务比较"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "语言条件选择性"
+        },
+        {
+          "category": "分析方法",
+          "label": "功能 ROI 条件反应对比"
+        },
+        {
+          "category": "刺激",
+          "label": "句子与可发音非词序列"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "fedorenko-2011-exp1",
+          "name": "定位句子理解网络",
+          "paradigm": "语言功能定位与跨任务比较",
+          "task_description": "阅读句子或可发音的非词序列，并判断探测项目是否出现；在个体内定位语言区，再检验非语言任务反应。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "句子",
+            "非词序列",
+            "非语言对照任务"
+          ],
+          "stimulus": "句子、非词及多种任务刺激",
+          "animation": {
+            "type": "language",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "阅读句子或非词"
+              },
+              {
+                "label": "探测项目判断"
+              },
+              {
+                "label": "个体功能定位"
+              },
+              {
+                "label": "比较任务选择性"
+              }
+            ],
+            "title": "定位句子理解网络"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "fedorenko-2011-lh_12",
+          "experiment_id": "fedorenko-2011-exp1",
+          "region_id": "lh_12",
+          "function_ids": [
+            "language"
+          ],
+          "metric": "句子相对非词反应",
+          "effect_direction": "selective",
+          "summary": "个体内功能定义的语言区域对高层语言加工敏感，而对所测非语言任务的反应很少或没有。",
+          "mechanism": "支持功能定义语言网络的选择性；不代表整个额下回均语言专属，也不排除相邻多需求区域。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究使用个体语言 fROI，并非 a2009s。左额下回岛盖部和三角部仅作额叶语言网络近似入口，不能以整个解剖分区代替功能 ROI。",
+          "mapping_confidence": 0.4,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "language-selectivity",
+            "label": "句子 / 非词（示意）"
+          }
+        },
+        {
+          "id": "fedorenko-2011-lh_14",
+          "experiment_id": "fedorenko-2011-exp1",
+          "region_id": "lh_14",
+          "function_ids": [
+            "language"
+          ],
+          "metric": "句子相对非词反应",
+          "effect_direction": "selective",
+          "summary": "个体内功能定义的语言区域对高层语言加工敏感，而对所测非语言任务的反应很少或没有。",
+          "mechanism": "支持功能定义语言网络的选择性；不代表整个额下回均语言专属，也不排除相邻多需求区域。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究使用个体语言 fROI，并非 a2009s。左额下回岛盖部和三角部仅作额叶语言网络近似入口，不能以整个解剖分区代替功能 ROI。",
+          "mapping_confidence": 0.4,
+          "animation": {
+            "type": "activation",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "language-selectivity",
+            "label": "句子 / 非词（示意）"
+          }
+        }
+      ]
+    },
+    {
+      "id": "kriegeskorte-2008",
+      "title": "Representational similarity analysis—connecting the branches of systems neuroscience",
+      "authors": [
+        "Nikolaus Kriegeskorte",
+        "Marieke Mur",
+        "Peter Bandettini"
+      ],
+      "year": 2008,
+      "journal": "Frontiers in Systems Neuroscience",
+      "doi": "10.3389/neuro.06.004.2008",
+      "url": "https://www.frontiersin.org/journals/systems-neuroscience/articles/10.3389/neuro.06.004.2008/full",
+      "summary": "RSA 用表征不相似性矩阵比较脑活动、计算模型和行为。文章的视觉示例显示早期视觉皮层与右侧梭状回面孔区具有不同的表征结构。",
+      "tags": [
+        {
+          "category": "领域",
+          "label": "视觉感知与方法"
+        },
+        {
+          "category": "认知过程",
+          "label": "表征结构比较"
+        },
+        {
+          "category": "实验范式",
+          "label": "多物体图像观看"
+        },
+        {
+          "category": "采集模态",
+          "label": "fMRI"
+        },
+        {
+          "category": "人群",
+          "label": "人类成人"
+        },
+        {
+          "category": "实验设计",
+          "label": "条件丰富的事件相关设计"
+        },
+        {
+          "category": "信号",
+          "label": "BOLD"
+        },
+        {
+          "category": "提取指标",
+          "label": "表征不相似性矩阵（RDM）"
+        },
+        {
+          "category": "分析方法",
+          "label": "RSA；模式相关距离；模型比较"
+        },
+        {
+          "category": "刺激",
+          "label": "不同类别物体图像"
+        },
+        {
+          "category": "证据性质",
+          "label": "相关性研究"
+        },
+        {
+          "category": "证据来源",
+          "label": "原始论文与书目已核验"
+        },
+        {
+          "category": "审阅状态",
+          "label": "示例摘要；精确图谱映射待复核"
+        },
+        {
+          "category": "结果数值",
+          "label": "未提取；动画仅示意"
+        },
+        {
+          "category": "文章类型",
+          "label": "方法论文与经验示例"
+        }
+      ],
+      "experiments": [
+        {
+          "id": "kriegeskorte-2008-exp1",
+          "name": "比较表征之间的距离",
+          "paradigm": "多类别图像观看与 RSA",
+          "task_description": "对不同图像提取活动模式，计算两两不相似性，再比较脑区和模型的矩阵结构。",
+          "modality": "fMRI",
+          "population": "人类成人；样本量尚未逐实验提取",
+          "conditions": [
+            "早期视觉皮层",
+            "右侧 FFA",
+            "计算模型"
+          ],
+          "stimulus": "多类别物体图像",
+          "animation": {
+            "type": "category-viewing",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "phases": [
+              {
+                "label": "呈现物体图像"
+              },
+              {
+                "label": "提取模式"
+              },
+              {
+                "label": "构建 RDM"
+              },
+              {
+                "label": "比较表征结构"
+              }
+            ],
+            "title": "比较表征之间的距离"
+          }
+        }
+      ],
+      "findings": [
+        {
+          "id": "kriegeskorte-2008-rh_21",
+          "experiment_id": "kriegeskorte-2008-exp1",
+          "region_id": "rh_21",
+          "function_ids": [
+            "visual-perception"
+          ],
+          "metric": "表征不相似性矩阵",
+          "effect_direction": "structured",
+          "summary": "右 FFA 的模式相关距离呈现明显类别结构；这与只比较平均激活差异获得的信息不同。",
+          "mechanism": "RSA 描述表征的相似性结构。类别内更相似并不意味着所有认知功能都更强，也不是本文中的学习前后变化。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原研究使用功能定义的右 FFA。rh_21 梭状回为近似位置，功能区域并不覆盖整个解剖分区。",
+          "mapping_confidence": 0.5,
+          "animation": {
+            "type": "rsa",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "category-structure",
+            "label": "类别内 / 类别间距离（合成矩阵）"
+          }
+        },
+        {
+          "id": "kriegeskorte-2008-lh_45",
+          "experiment_id": "kriegeskorte-2008-exp1",
+          "region_id": "lh_45",
+          "function_ids": [
+            "visual-perception"
+          ],
+          "metric": "表征不相似性矩阵",
+          "effect_direction": "structured",
+          "summary": "早期视觉皮层的表征结构与右 FFA 不同；低层图像模型可用于解释其模式差异。",
+          "mechanism": "不同脑区可以保留不同的刺激关系，因此比较矩阵结构比单一激活大小更有信息。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文 EVC 以距状沟周边解剖掩模结合视觉响应定义；S_calcarine 仅为近似入口，未复现 ROI 或验证 a2009s 重叠。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "rsa",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "visual-structure",
+            "label": "早期视觉表征结构（合成矩阵）"
+          }
+        },
+        {
+          "id": "kriegeskorte-2008-rh_45",
+          "experiment_id": "kriegeskorte-2008-exp1",
+          "region_id": "rh_45",
+          "function_ids": [
+            "visual-perception"
+          ],
+          "metric": "表征不相似性矩阵",
+          "effect_direction": "structured",
+          "summary": "早期视觉皮层的表征结构与右 FFA 不同；低层图像模型可用于解释其模式差异。",
+          "mechanism": "不同脑区可以保留不同的刺激关系，因此比较矩阵结构比单一激活大小更有信息。",
+          "evidence_type": "correlational",
+          "mapping_status": "provisional",
+          "mapping_source": "原文 EVC 以距状沟周边解剖掩模结合视觉响应定义；S_calcarine 仅为近似入口，未复现 ROI 或验证 a2009s 重叠。",
+          "mapping_confidence": 0.55,
+          "animation": {
+            "type": "rsa",
+            "synthetic": true,
+            "data_status": "illustrative",
+            "note": "教学动画：刺激、播放时长及指标图形为合成示意，不是原始实验数据。",
+            "pattern": "visual-structure",
+            "label": "早期视觉表征结构（合成矩阵）"
+          }
+        }
+      ]
+    }
+  ]
+}
